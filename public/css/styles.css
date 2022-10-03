@@ -1,0 +1,381 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Metal', cursive;
+    letter-spacing: 0.09rem;
+
+}
+#cross{
+    display: none;
+}
+.navigation{
+    
+    display: flex;
+    background-color: rgb(213, 0, 0);
+    padding: 0.2vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 52px;
+     
+     
+}
+li img{
+    width: 3rem;
+}
+nav ul{
+    flex-grow: 1;
+    display: flex;
+    margin-left: 0.1vw;
+    box-sizing: border-box;
+    align-items: center;
+    
+
+}
+nav ul li{
+    list-style: none;
+    padding: 0vw 1.5vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0.38vw;
+    margin-right: 0.1vw;
+}
+nav ul li a:hover{
+  color:black;
+
+
+}
+
+.container::before{
+    content:" ";
+    background: url("/images/78.jpg") center no-repeat ;
+    background-size:cover;
+    opacity: 1;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    height:63vh;
+    opacity: 0.4;
+
+    
+}
+.container{
+    height: 50vh;
+   
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    /* background: url("/images/78.jpg") center no-repeat ;
+    background-size:cover;
+    opacity: 0.1;
+    z-index: 10; */
+    
+}
+.container h1{
+    font-size: 2.7em;
+    padding: 0;
+    color: black;
+    padding: 0;
+    margin: 0;
+    line-height: 94%;
+   
+}
+.container h2{
+    font-size: 2.4rem;
+    color: black;
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
+   
+}
+.cards{
+display: flex;
+justify-content:center;
+align-items:center;
+margin-top: 0.8vw;
+
+
+}
+.heading{
+    display: block;
+    text-align: center;
+    margin-top: 10vh;
+    width:100%;
+}
+
+.card{
+
+
+border:2px solid black;
+
+width:400px;
+height:200px;
+padding:0 ;
+    margin:0 1.6vw;
+    border-radius:10px;
+
+}
+#card1{
+    
+}
+#card2 img{
+    width: 7vw;
+    
+}
+#card3 img{
+    width:4vw;
+    margin-right:10px;
+  
+}
+.abc{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-sizing: border-box;
+}
+.cards img{
+    float:left  ;
+    width:5vw;
+}
+p{
+    text-align:justify;
+}
+.card h1{
+    text-align: center;
+    font-size: x-large;
+}
+.sponsors h1{
+    text-align:center;
+}
+.sponsors{
+    background-color:aqua;
+    margin-top: 25px;
+    
+
+    
+}
+.icons{
+    display:flex;
+    margin:1.5vw;
+    justify-content: center;
+    align-items:center;
+   
+
+}
+.icons img{
+    width: 55px;
+    margin: 0px 4.5vw;
+    margin-bottom: 1.8vw
+    
+}
+.footer{
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:10vh;
+    
+
+}
+.footer p{
+    text-align: center;
+    color:white;
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form input{
+   width:100% ;
+   border-radius: 8px;
+   margin:8px 0;
+   padding:5px 0;
+
+}
+.btn{
+    background-color: red;
+    width:20%;
+    
+}
+.abc div{
+    overflow-wrap: break-word;
+}
+
+@media only screen and (max-width:822px){
+    #cross{
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+   
+    #menu{
+        cursor:pointer;
+        display:flex;
+        flex-direction:column;
+    }
+    #sec1{
+        display:none;
+        text-align: center;
+    }
+    #sec2{
+        display:none;
+        text-align: center;
+    }
+    #sec3{
+        display:none;
+        text-align: center;
+    }
+    #sec4{
+        display:none;
+        text-align: center;
+    }
+    #sec5{
+        display:none;
+        text-align: center;
+    }
+    #sec6{
+        display:none;
+        text-align: center;
+    }
+     .menu1{
+        cursor:pointer;
+        width: 35px;
+        height:2.5px;
+        background-color: black;
+        margin: 1.5px 0;
+     }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        margin-top: 0.8vw;}
+        #card2 img{
+            width: 100px;
+            
+        }
+        #card3 img{
+            width:90px;
+            margin-right:10px;
+          
+        }
+        #cross img{
+            
+            
+           
+        }
+        #cross1{
+            display: none;
+            width:30px;
+            cursor:pointer;
+        }
+        #card1 img{
+            width:100px;
+            margin-right:10px;
+          
+        }
+        .card{
+            height:auto;
+            width:72%;
+            margin:10px 10px;
+
+        }
+        
+        
+        nav ul{
+            flex-direction:column;
+        }
+        .navigation{
+            justify-content:center;
+            height: auto;
+            align-items:center;
+
+        }
+        nav ul li{
+            justify-content:center;
+        }
+        .container::before{
+            content:" ";
+            background: url("/images/78.jpg") center no-repeat ;
+            background-size:cover;
+            opacity: 1;
+            position:absolute;
+            top: 65px;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: -1;
+            height:57vh;
+            opacity: 0.4;
+        
+            
+        }
+        .heading{
+          
+            
+            margin-top: 115px;
+            
+        }
+
+    }
+    @media only screen and (min-width:912px) and (max-width:915px){
+        .heading{
+          
+            
+            margin-top: 150px;
+            
+        }
+
+    }
+    @media only screen and (min-width:1280px) and (max-width:1287px){
+        .heading{
+           
+            
+            margin-top: 70px;
+            
+        }
+
+    }
+    @media only screen and (min-width:280px) and (max-width:287px){
+          .container::before{
+            top:67px;
+          }
+          html{
+            width:100vw;
+            overflow-x:hidden;
+          }
+          body{
+            
+            width:100vw;
+            overflow-x:hidden;
+          }
+          .heading{
+            margin-top:7vh;
+          }
+
+    }
